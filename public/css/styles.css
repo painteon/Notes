@@ -1,0 +1,210 @@
+/* general changes */
+
+body {
+  background-color: #E8F0F2;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+}
+
+h1{
+  font-size: 312.5%;
+}
+p{
+  text-align: center;
+}
+
+form{
+  display: inline-block;
+}
+
+header{
+  text-align: center;
+  background-color: #008CBA;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* Diary Layout changes */
+
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 750px;
+  margin: auto;
+}
+/* History layout changes */
+
+.flex-container-history{
+  display: flex;
+  justify-content: center;
+  /* align-content: center; */
+  margin: auto;
+}
+
+.flex-container-pages{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: center;
+  max-width: 970px;
+  flex-wrap: wrap;
+}
+
+.flex-item{
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.history_box_max_width{
+  width: 1100px;
+}
+
+/* Inner/Outer Div styles */
+
+.outer_div {
+  background-color: #2978B5;
+  border-radius: 50px;
+  text-align: center;
+  display: inline-block;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+.inner_div {
+  background-color: #008CBA;
+  border-radius: 50px;
+  text-align: center;
+  display: inline-block;
+  margin: 10px;
+  border-style: none;
+}
+
+/* Button Layout and Styles */
+
+.flex-container-button{
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 250px;
+}
+
+
+.button_style{
+  border: 2px solid #008CBA;
+  padding: 14px 20px;
+  background-color: #008CBA;
+  border-radius: 8px;
+  font-size: 125%;
+  color: white;
+  font-family: inherit;
+  display: inline-block;
+  position: relative;
+  width: 100px;
+}
+
+.button_style:hover {
+  color: black;
+  background-color: white;
+  border-color: #008CBA;
+  box-shadow: 0 0 5px 2px #3EDBF0;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.button_style:active {
+  color: white;
+  background-color: #008CBA;
+  transition: color 0.2s, background-color 0.2;
+}
+
+.delete{
+  width: auto;
+  padding: 3px 10px;
+  background-color: #2978B5;
+}
+
+.alternateButtonStyle{
+  background-color: #2978B5;
+  border: 2px solid #2978B5;
+}
+
+.historyButton_1{
+  border: 2px solid #2978B5;
+  padding: 14px 20px;
+  background-color: #2978B5;
+  border-radius: 8px;
+  font-size: 20px;
+  color: white;
+  font-family: inherit;
+  display: inline-block;
+  width: 100px;
+}
+
+/* Input and textarea styles and layout */
+
+.title_1{
+  text-align: center;
+  border: none;
+  /* padding-left: 10px; */
+}
+
+.title_1_input{
+  border: none;
+  border: 2px solid;
+  border-color: #2978B5;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  height: 25px;
+  padding-left: 10px;
+  box-shadow: -9px 7px 10px #2978B5;
+  font-family: 'Roboto', sans-serif;
+  font-size: 93.75%;
+}
+
+.title_1_input:focus{
+  outline: none;
+  box-shadow: 0 0 5px 2px #3EDBF0;
+}
+
+.text_1{
+  text-align: left;
+}
+
+.text_1_textArea:focus{
+  outline: none;
+  box-shadow: 0 0 5px 5px #3EDBF0;
+}
+
+.text_1_textArea{
+  border: 2px solid;
+  border-radius: 30px;
+  border-color: #2978B5;
+  box-shadow: -9px 13px 10px #2978B5;
+  padding: 16px 22px;
+  background-image: url("https://www.transparenttextures.com/patterns/lined-paper.png");
+  font-family: 'Roboto', sans-serif;
+  font-size: 75%;
+}
+
+/* Other smaller changes */
+
+.box_1{
+  display: inline-block;
+  padding: 20px;
+}
+
+.box_1_history{
+  display: flex;
+  display: inline-block;
+  padding: 20px;
+}
+
+
+
+.form_display{
+  display: inline-block;
+}

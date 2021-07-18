@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Diary</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Lobster&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+
+  <header>
+    <h1 >My Saved Pages</h1>
+  </header>
+
+  <div class="flex-container-history">
+    <div class="outer_div">
+      <div class="inner_div">
+
+
+        <div class="box_1_history history_box_max_width">
+          <form class="" action="/delete" method="post">
+          <div class="text_1 flex-container-pages">
+            <% allPages.forEach(function(page){ %>
+              <div class="flex-item">
+                <button class= "button_style delete" type="submit" name="deleteButton" value= "<%= page.id%>">-</button>
+            <textarea readonly class=" text_1_textArea text_1_textArea_offsets" name="leftText" rows="10" cols="35">
+<%= page.id%>. <%= page.title %>
+
+<%= page.text %>
+            </textarea>
+              </div>
+            <% }); %>
+          </div>
+          </form>
+        </div>
+        <div class="box_1 position_up">
+          <form class="" action="/goHome" method="post">
+          <button class=" button_style alternateButtonStyle" type="submit" name="rightButton">Home</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

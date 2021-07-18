@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>My Diary</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jomhuria&family=Lobster&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+
+  <header>
+    <h1 >My Weekly Diary</h1>
+  </header>
+
+<div class="flex-container">
+  <div class="outer_div">
+    <div class="inner_div">
+
+
+      <div class="box_1 ">
+        <form class="" action="/" method="post" id="home">
+        <div class="title_1 ">
+          <input class="title_1_input " type="text" name="leftInput" size="40" autocomplete="off" value="<%= allPages[0].title %>">
+        </div>
+        <div class="text_1">
+          <textarea class=" text_1_textArea " name="leftText" rows="50" cols="60"><%= allPages[0].text %></textarea>
+        </div>
+          </form>
+      </div>
+
+    </div>
+
+  </div>
+  <form class="" action="/history" method="post" id="history">
+  </form>
+<div class="flex-container-button">
+  <button class="button_style " type="submit" name="rightButton" form="home">Save</button>
+  <button class="button_style alternateButtonStyle " type="submit" name="rightButton" form="history">Saved Pages</button>
+</div>
+</div>
+
+
+</body>
+
+</html>
