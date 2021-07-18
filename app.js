@@ -137,6 +137,11 @@ app.post("/", function(req, res) {
 
 /////////////////////Server///////////////////////////////
 
-app.listen(3000, function() {
-  console.log("server is running on port 3000");
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 3000;
+}
+
+app.listen(port, function() {
+  console.log("server is running succesfully");
 }); //Creates server at port 3000
